@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакти с АИДА СТИЛ ООД - Адрес, телефон, имейл и контактна форма.">
+    <meta name="keywords" content="контакти, АИДА СТИЛ, адрес, телефон, имейл, София">
+    <title>Контакти - АИДА СТИЛ ООД</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>АИДА СТИЛ</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Начало</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">За нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Галерия</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Контакти</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Контакти</h1>
+            <p>Свържете се с нас за консултация или поръчка</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Информация за контакт</h3>
+                    <div class="contact-item">
+                        <strong>Адрес:</strong>
+                        <p>ул. "Индустриална" 15, София 1000</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Телефон:</strong>
+                        <p>+359 2 123 4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Имейл:</strong>
+                        <p>info@aidastil.bg</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Работно време:</strong>
+                        <p>Понеделник - Петък: 9:00 - 18:00<br>
+                        Събота: 9:00 - 14:00</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" action="send_contact.php" method="POST" enctype="multipart/form-data">
+                    <h3>Изпратете ни съобщение</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Вашето име" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Вашият имейл" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Вашето съобщение" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <!-- Replaced single multiple file input with 3 separate file inputs -->
+                    <div class="form-group">
+                        <label class="file-section-label">Прикачете файлове (максимум 3 файла)</label>
+                        <div class="file-inputs-container">
+                            <div class="file-input-wrapper">
+                                <input type="file" id="attachment1" name="attachment1" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                <label for="attachment1" class="file-label">Файл 1 (по избор)</label>
+                            </div>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="attachment2" name="attachment2" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                <label for="attachment2" class="file-label">Файл 2 (по избор)</label>
+                            </div>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="attachment3" name="attachment3" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                <label for="attachment3" class="file-label">Файл 3 (по избор)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Изпратете съобщението</button>
+                </form>
+            </div>
+            
+            <div class="map-container">
+                <h3>Нашето местоположение</h3>
+                <div class="map-placeholder">
+                    <p>Карта с местоположението на АИДА СТИЛ ООД</p>
+                    <small>ул. "Индустриална" 15, София 1000</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>АИДА СТИЛ ООД</h4>
+                    <p>Качествени мебели за дома и офиса</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Бързи връзки</h4>
+                    <ul>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="about.html">За нас</a></li>
+                        <li><a href="gallery.html">Галерия</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <p>ул. "Индустриална" 15, София 1000</p>
+                    <p>Телефон: +359 2 123 4567</p>
+                    <p>Имейл: info@aidastil.bg</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 АИДА СТИЛ ООД. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

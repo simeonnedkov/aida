@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерия с мебели от АИДА СТИЛ ООД - Спални, дневни, кухни и офис мебели.">
+    <meta name="keywords" content="галерия, мебели, спални, дневни, кухни, офис, АИДА СТИЛ">
+    <title>Галерия - АИДА СТИЛ ООД</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>АИДА СТИЛ</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Начало</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">За нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Галерия</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Контакти</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Галерия</h1>
+            <p>Разгледайте нашите най-добри творения</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Всички</button>
+                <button class="filter-btn" data-filter="bedroom">Спални</button>
+                <button class="filter-btn" data-filter="living">Дневни</button>
+                <button class="filter-btn" data-filter="kitchen">Кухни</button>
+                <button class="filter-btn" data-filter="office">Офис</button>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Bedroom items -->
+                <div class="gallery-item" data-category="bedroom">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Модерна спалня">
+                    <div class="gallery-overlay">
+                        <h4>Модерна спалня</h4>
+                        <p>Елегантен спален комплект</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bedroom">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Класическа спалня">
+                    <div class="gallery-overlay">
+                        <h4>Класическа спалня</h4>
+                        <p>Традиционен дизайн</p>
+                    </div>
+                </div>
+                
+                <!-- Living room items -->
+                <div class="gallery-item" data-category="living">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Съвременна дневна">
+                    <div class="gallery-overlay">
+                        <h4>Съвременна дневна</h4>
+                        <p>Стилен дневен комплект</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Минималистична дневна">
+                    <div class="gallery-overlay">
+                        <h4>Минималистична дневна</h4>
+                        <p>Чист и модерен дизайн</p>
+                    </div>
+                </div>
+                
+                <!-- Kitchen items -->
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Модерна кухня">
+                    <div class="gallery-overlay">
+                        <h4>Модерна кухня</h4>
+                        <p>Функционален кухненски дизайн</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Луксозна кухня">
+                    <div class="gallery-overlay">
+                        <h4>Луксозна кухня</h4>
+                        <p>Премиум материали</p>
+                    </div>
+                </div>
+                
+                <!-- Office items -->
+                <div class="gallery-item" data-category="office">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Офис мебели">
+                    <div class="gallery-overlay">
+                        <h4>Офис мебели</h4>
+                        <p>Професионални решения</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="office">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Ръководен офис">
+                    <div class="gallery-overlay">
+                        <h4>Ръководен офис</h4>
+                        <p>Представителни мебели</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>АИДА СТИЛ ООД</h4>
+                    <p>Качествени мебели за дома и офиса</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Бързи връзки</h4>
+                    <ul>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="about.html">За нас</a></li>
+                        <li><a href="gallery.html">Галерия</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <p>ул. "Индустриална" 15, София 1000</p>
+                    <p>Телефон: +359 2 123 4567</p>
+                    <p>Имейл: info@aidastil.bg</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 АИДА СТИЛ ООД. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
